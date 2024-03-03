@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # Admin Backend
+  lcawards_admin:
+    build:
+      context: .
+    container_name: lcawards_admin
+    restart: always
+    labels:
+      traefik.enable: true
+      traefik.http.middlewares.traefik-node-app-awdadm-redirect.redirectscheme.scheme: https
+      traefik.http.routers.node-app-awdadm.tls.certresolver: letsencrypt_resolver
+      traefik.http.routers.node-app-awdadm-http-router.entrypoints: web
+      traefik.http.routers.node-app-awdadm-http-router.rule: Host(`${BACKEND_URL}`)
+      traefik.http.routers.node-app-awdadm-http-router.middlewares: traefik-node-app-awdadm-redirect
+      traefik.http.routers.node-app-awdadm-https-router.entrypoints: websecure
+      traefik.http.routers.node-app-awdadm-https-router.tls: 'true'
+      traefik.http.routers.node-app-awdadm-https-router.rule: Host(`${BACKEND_URL}`)
+      traefik.http.routers.node-app-awdadm-https-router.tls.certresolver: letsencrypt_resolver
+      traefik.http.middlewares.redirect-to-https.headers.sslredirect: true
+      traefik.http.middlewares.redirect-to-https.headers.sslProxyHeaders.X-Forwarded-Proto: https
+      traefik.http.services.node-app-awdadm.loadbalancer.server.port: ${PORT}
+      traefik.http.middlewares.force-secure.redirectscheme.scheme: https
+      traefik.http.middlewares.force-secure.redirectscheme.permanent: true
+    networks:
+      - server-setup-2023_lcdev_network
+    volumes:
+      - ./public/data:/usr/src/app/public/data
+      - ./volumes/logs-volume:/usr/src/app/logs
+
+networks:
+  server-setup-2023_lcdev_network:
+    external: true
+
+volumes:
+  code_mongodb_data:

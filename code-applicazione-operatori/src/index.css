@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input:focus {
+    @apply appearance-none outline-none ring-offset-0 ring-0;
+  }
+}
+
+@layer components {
+  .timing-btn {
+    @apply h-24 w-24 border-2 border-[#171905] rounded-xl text-2xl;
+  }
+  .timing-btn-gray {
+    background: transparent radial-gradient(closest-side at 50% 50%, #e1e0db 0%, #e1e0db 20%, #949494 140%) 0% 0% no-repeat padding-box;
+    color: #171905;
+  }
+  .timing-btn-green {
+    background: transparent radial-gradient(closest-side at 50% 50%, #92ad4f 0%, #8fa94d 20%, #495728 140%) 0% 0% no-repeat padding-box;
+    color: #dfdfdf;
+  }
+  .timing-btn-yellow {
+    background: transparent radial-gradient(closest-side at 50% 50%, #ffce00 0%, #f4c500 33%, #806700 140%) 0% 0% no-repeat padding-box;
+    color: #dfdfdf;
+  }
+  .timing-btn-orange {
+    background: transparent radial-gradient(closest-side at 50% 50%, #f1860b 0%, #f1760b 36%, #4b2300 140%) 0% 0% no-repeat padding-box;
+    color: #dfdfdf;
+  }
+  .timing-btn-red {
+    background: transparent radial-gradient(closest-side at 50% 50%, #f10b1b 0%, #ec0b1a 36%, #79060e 140%) 0% 0% no-repeat padding-box;
+    color: #dfdfdf;
+  }
+  .timing-btn-purple {
+    background: transparent radial-gradient(closest-side at 50% 50%, #9e003f 0%, #9e003f 36%, #3a0118 140%) 0% 0% no-repeat padding-box;
+    color: #dfdfdf;
+  }
+}
+
+html {
+  font-family: Poppins;
+}

@@ -1,0 +1,21 @@
+{
+  "button": {
+    "goToVote": {
+      "label": "Go to vote"
+    },
+    "vote": {
+      "label": "Vote me!"
+    }
+  },
+  "category_withSymbol": "ategory",
+  "categoryRemainingTime": "Remaining time: {{remainingTimeFormatted}}",
+  "copyRightNONUSATO": "<0>Copyright © 2022. All rights reserved</0><1>Privacy policy - Cookie policy</1>",
+  "error": {
+    "loginFailed": {
+      "message": "Incorrect username or password"
+    }
+  },
+  "maxVotesNumber": "It is possible to express up to <1>{{count}} preferences</1> for each category.",
+  "Partner unico": "Partner unico",
+  "theProject": "The project"
+}

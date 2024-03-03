@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'CocoSharp';
+    src: url('./assets/fonts/cocosharp/CocoSharp-ExtraLight.otf');
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: 'CocoSharp';
+    src: url('./assets/fonts/cocosharp/CocoSharp-Light.otf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'CocoSharp';
+    src: url('./assets/fonts/cocosharp/CocoSharp-Regular.otf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'CocoSharp';
+    src: url('./assets/fonts/cocosharp/CocoSharp-Bold.otf');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'CocoSharp';
+    src: url('./assets/fonts/cocosharp/CocoSharp-Extrabold.otf');
+    font-weight: 800
+  }
+}
+
+@layer components {
+  .category-symbol-hover path {
+    fill: #DA1021;
+  }
+}
+
+:root {
+  font-family: CocoSharp, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #EFEFEF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+input[type='checkbox']:focus {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}

@@ -1,0 +1,31 @@
+{
+  "button": {
+    "goToVote": {
+      "label": "Vedi i partecipanti"
+    },
+    "vote": {
+      "label": "Votami"
+    }
+  },
+  "category_withSymbol": "ategoria",
+  "categories_withSymbol": "ategorie",
+  "categoryRemainingTime": "Rimangono: {{remainingTimeFormatted}}",
+  "copyRightNONUSATO": "<0>Copyright © 2023. Tutti i diritti riservati</0><1>Informativa sulla privacy - Politica sui cookie</1>",
+  "error": {
+    "loginFailed": {
+      "message": "Nome utente o password errati"
+    }
+  },
+  "maxVotesNumber": "Si possono esprimere fino a <1>{{count}} preferenze</1> per ogni categoria.",
+  "Partner unico": "Partner unico",
+  "theProject": "Il progetto",
+  "Back":"Torna indietro",
+  "Sign in":"Accedi",
+  "Forgot your Password?":"Dimenticato la password?",
+  "Remember Me":"Ricordati di me",
+  "Sign in to your MyLC&G account":"Accedi con il tuo account MyLC&G",
+  "Username":"Username",
+  "Sign Up":"Registrati",
+  "You have already voted for this participant":"Hai già votato per questo partecipante",
+  "An unexpected error has occurred, please try again!":"C'è stato un errore, ti invitiamo a riprovare!"
+}

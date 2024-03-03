@@ -1,0 +1,6 @@
+::placeholder {
+    color: #909090 !important;
+}
+.form-check-input:checked {
+    background-color: #f21a18 !important;
+}

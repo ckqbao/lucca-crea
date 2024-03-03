@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # Admin Backend
+  lcwtt_adm:
+    build:
+      context: .
+      dockerfile: Dockerfile.produzione
+    container_name: lcwtt_adm
+    restart: always
+    labels:
+      traefik.enable: true
+      traefik.http.middlewares.traefik-wtt-adm-redirect.redirectscheme.scheme: https
+      traefik.http.routers.wtt-adm-http-router.entrypoints: web
+      traefik.http.routers.wtt-adm-http-router.rule: Host(`${BACKEND_URL}`)
+      traefik.http.routers.wtt-adm-http-router.middlewares: traefik-wtt-adm-redirect
+      traefik.http.routers.wtt-adm-https-router.entrypoints: websecure
+      traefik.http.routers.wtt-adm-https-router.tls: 'true'
+      traefik.http.routers.wtt-adm-https-router.rule: Host(`${BACKEND_URL}`)
+      traefik.http.middlewares.redirect-to-https.headers.sslredirect: true
+      traefik.http.middlewares.redirect-to-https.headers.sslProxyHeaders.X-Forwarded-Proto: https
+      traefik.http.services.wtt-adm.loadbalancer.server.port: ${PORT}
+      traefik.http.middlewares.force-secure.redirectscheme.scheme: https
+      traefik.http.middlewares.force-secure.redirectscheme.permanent: true
+    networks:
+      - server-setup-2023_lc_network
+    volumes:
+      - ./public/data:/usr/src/app/public/data
+      - ./volumes/logs-volume:/usr/src/app/logs
+
+networks:
+  server-setup-2023_lc_network:
+    external: true
+

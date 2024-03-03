@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="XMLID_12_"
+   width="131.943"
+   height="114.067"
+   viewBox="0 0 131.943 114.067"
+   version="1.1"
+   sodipodi:docname="group_ffffff.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="6.811786"
+     inkscape:cx="66.282176"
+     inkscape:cy="53.510196"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="XMLID_12_" />
+  <path
+     id="XMLID_28_"
+     d="m 65.413316,5.7315659 c -6.171812,0 -11.174116,4.4705991 -11.174116,9.9926851 0,5.522086 5.007072,9.990301 11.174116,9.990301 6.167044,0 11.171731,-4.471792 11.171731,-9.990301 0,-5.518509 -5.003494,-9.9926851 -11.171731,-9.9926851 z"
+     style="stroke-width:1.19216" />
+  <path
+     id="XMLID_13_"
+     d="m 79.415235,30.19469 c -0.98949,-1.936068 -3.037618,-2.555992 -5.461288,-2.555992 H 56.861952 c -2.441544,0 -4.472985,0.618731 -5.458901,2.555992 L 35.47341,61.4114 a 4.0986462,4.0986462 0 0 0 2.36286,5.660375 5.0178015,5.0178015 0 0 0 6.327986,-2.113699 l 7.702546,-15.09513 v 16.27656 c 0,0.02384 -0.01549,0.04411 -0.01549,0.06795 v 36.859204 a 5.7688623,5.7688623 0 0 0 11.465002,0 V 72.503257 h 4.183291 v 30.563403 a 5.7676702,5.7676702 0 0 0 11.465,0 V 66.207459 c 0,-0.02265 -0.0143,-0.04291 -0.0143,-0.06795 v -16.26941 l 7.70015,15.087977 a 4.8389775,4.8389775 0 0 0 4.34781,2.503536 5.2180845,5.2180845 0 0 0 1.98019,-0.387452 4.097454,4.097454 0 0 0 2.36285,-5.660377 z"
+     style="stroke-width:1.19216" />
+</svg>
